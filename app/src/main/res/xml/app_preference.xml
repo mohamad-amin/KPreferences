@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Normal types">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="booleanKey"
+            android:title="Switch Preference"
+            android:summary="Switch Summary"
+            android:defaultValue="true" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="stringKey"
+            android:title="EditText Preference (string)"
+            android:summary="EditText Summary (string)"
+            android:dialogMessage="Dialog Message"
+            android:defaultValue="Default string" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="floatKey"
+            android:title="EditText Preference (float)"
+            android:summary="EditText Summary (float)"
+            android:dialogMessage="Dialog Message"
+            android:defaultValue="3.14" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Custom DummyClass with Adapter">
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="unusedCheck"
+            android:title="Checkbox Preference"
+            android:summary="Checkbox Summary"
+            android:defaultValue="true"/>
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="unusedEdit"
+            android:title="EditText Preference"
+            android:summary="EditText Summary"
+            android:dialogMessage="Dialog Message"
+            android:defaultValue="Default Dummy" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Next Screen">
+
+        <android.support.v7.preference.Preference
+            android:key="nextScreen"
+            android:title="Next Screen"
+            android:summary="Go to next screen to see the results" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

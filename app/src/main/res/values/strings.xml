@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KPreferences</string>
+    <string name="title_notifications">Reactive Preference</string>
+</resources>
