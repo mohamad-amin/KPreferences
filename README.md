@@ -50,7 +50,7 @@ someClass.age = intPreference
 // automatically is saved in shared preferences with no need to edit or ...
 intPreference = 21
 ```
-#### Reactive Preferences 
+### Reactive Preferences 
 KPreferences also provides **Observable Preferences** that lets you observe changes to a **single preference**. It uses `SharedPreferences`'s `registerOnSharedPreferenceChangeListener` method.
 
 **But unlike** that method that requires you to observe changes on all fields `ObservablePreference` lets you only listen to the changes that you need:
@@ -81,7 +81,7 @@ override fun onDestroy() {
     destroyers.invoke()
 }
 ```
-#### Custom Types
+### Custom Types
 You can use the [`adapter`](https://github.com/mohamad-amin/KPreferences/blob/master/kpreferences/src/main/kotlin/com/mohamadamin/kpreferences/base/Adapter.kt) abstraction to **store and retrieve values of an arbitrary type**.
 
 As you see below you should override `decode` and `encode` functions of the `Adapter<T>` class to create an adapter for the variable of type `T` and save/restore it in `SharedPreferences`. There's [an example of an adapter which uses Gson to serialize/deserialize the custom type](https://github.com/mohamad-amin/KPreferences/blob/master/app/src/main/kotlin/com/mohamadamin/kpreferencesdemo/base/DummyAdapter.kt) in the demo app.
