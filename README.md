@@ -29,7 +29,7 @@ dependencies {
 ## Usage
 
 First you need to initialize `KPreferenceManager` in your application class. You can also provide `name` of the `SharedPreference` and `mode` for the operating mode but it's not needed (defaults to `"default"` for file name and `Context.MODE_PRIVATE` for mood):
-```java
+```kotlin
 override fun onCreate() {
     super.onCreate()
     KPreferenceManager.initialize(this)
@@ -37,14 +37,14 @@ override fun onCreate() {
 ```
 
 Use `SharedPreferences` in your project with only one line:
-```java
+```kotlin
 val intPreference: Int by Preference("IntPreference", -1)
 ```
 it creates a `SharedPreferences` property with `IntPreference` name and `-1` as its default value.
 
 Then the `intPreference` property  is automatically saved when you change the `intPreference` property and is directly retrieved from `SharedPreferences` when you want to access its value:
 
-```java
+```kotlin
 // the age value is directly retrieved from SharedPreferences property named "IntPreference"
 someClass.age = intPreference
 // automatically is saved in shared preferences with no need to edit or ...
@@ -55,7 +55,7 @@ KPreferences also provides **Observable Preferences** that lets you observe chan
 
 **But unlike** that method that requires you to observe changes on all fields `ObservablePreference` lets you only listen to the changes that you need:
 
-```java
+```kotlin
 // Composite destroyer to destroy all observables at once to avoid memory leaks
 val destroyers = CompositeDestroyer()
 var toolbarTitle: Int by ObservablePreference(
@@ -75,7 +75,7 @@ var toolbarTitle: Int by ObservablePreference(
     )
 ```
 but you need to destroy the `destroyable callback` in your `onDestroy` to **avoid possible memory leaks**. The `CompositeDestroyer` is a helper class to destroy all callbacks at once:
-```java
+```kotlin
 override fun onDestroy() {
     super.onDestroy()
     destroyers.invoke()
@@ -86,7 +86,7 @@ You can use the [`adapter`](https://github.com/mohamad-amin/KPreferences/blob/ma
 
 As you see below you should override `decode` and `encode` functions of the `Adapter<T>` class to create an adapter for the variable of type `T` and save/restore it in `SharedPreferences`. There's [an example of an adapter which uses Gson to serialize/deserialize the custom type](https://github.com/mohamad-amin/KPreferences/blob/master/app/src/main/kotlin/com/mohamadamin/kpreferencesdemo/base/DummyAdapter.kt) in the demo app.
 
-```java
+```kotlin
 /**
  * @author MohamadAmin Mohamadi (mohammadi.mohamadamin@gmail.com) on 3/16/17.
  * Converter for storing and retrieving objects of type [T] in [android.content.SharedPreferences]
