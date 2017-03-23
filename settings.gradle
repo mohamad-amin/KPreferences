@@ -1,1 +1,1 @@
-include ':app', ':kpreferences-lib'
+include ':app', ':kpreferences'

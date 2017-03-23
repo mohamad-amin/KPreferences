@@ -26,7 +26,7 @@ android {
 
 dependencies {
 
-    compile project(':kpreferences-lib')
+    compile project(':kpreferences')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.anko:anko-common:0.9"
 

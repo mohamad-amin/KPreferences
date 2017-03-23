@@ -66,7 +66,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         }
 
         floatView.setOnPreferenceChangeListener { preference, any ->
-            floatPref = any as Float
+            floatPref = (any as String).toFloat()
             true
         }
 
