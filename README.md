@@ -1,4 +1,4 @@
-[![Bintray](https://img.shields.io/bintray/v/mohamad-amin/maven/kpreferences.svg?maxAge=2592000)](https://bintray.com/mohamad-amin/maven/kpreferences) 
+[![Bintray](https://img.shields.io/bintray/v/mohamad-amin/maven/kpreferences.svg?maxAge=2592000)](https://bintray.com/mohamad-amin/maven/kpreferences) [![Methods Count](https://img.shields.io/badge/Methods%20and%20size-core:%20113%20%7C%20deps:%206322%20%7C%2017%20KB-e91e63.svg)](http://www.methodscount.com/?lib=com.mohamadamin.kpreferences%3Akpreferences%3A0.1)
 
 # KPreferences
 A **Kotlin** library for **reactive** and **boilerplate-free** Shared Preferences in Android.
