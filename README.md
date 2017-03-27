@@ -1,4 +1,4 @@
-[![Bintray](https://img.shields.io/bintray/v/mohamad-amin/maven/kpreferences.svg?maxAge=2592000)](https://bintray.com/mohamad-amin/maven/kpreferences) [![Methods Count](https://img.shields.io/badge/Methods%20and%20size-core:%20113%20%7C%20deps:%206322%20%7C%2017%20KB-e91e63.svg)](http://www.methodscount.com/?lib=com.mohamadamin.kpreferences%3Akpreferences%3A0.1)
+[![Bintray](https://img.shields.io/bintray/v/mohamad-amin/maven/kpreferences.svg?maxAge=2592000)](https://bintray.com/mohamad-amin/maven/kpreferences) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KPreferences-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5446) ![Miin API](https://img.shields.io/badge/API-9+-brightgreen.svg) [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](https://opensource.org/licenses/Apache-2.0) [![Methods Count](https://img.shields.io/badge/Size-17%20KB-e91e63.svg)](http://www.methodscount.com/?lib=com.mohamadamin.kpreferences%3Akpreferences%3A0.1)
 
 # KPreferences
 A **Kotlin** library for **reactive** and **boilerplate-free** Shared Preferences in Android.
@@ -77,7 +77,7 @@ var toolbarTitle: Int by ObservablePreference(
 but you need to destroy the `destroyable callback` in your `onDestroy` to **avoid possible memory leaks**. The `CompositeDestroyer` is a helper class to destroy all callbacks at once:
 ```kotlin
 override fun onDestroy() {
-    super.onDestroy()
+cence    super.onDestroy()
     destroyers.invoke()
 }
 ```
@@ -112,7 +112,7 @@ interface Adapter<T> {
 ## Demo
 You can see a full demo of the library in the [app](https://github.com/mohamad-amin/KPreferences/tree/master/app) module.
 
-## Licence
+## License
 ```
 Copyright 2017 Mohamad Amin Mohamadi
 
