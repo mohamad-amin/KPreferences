@@ -38,7 +38,7 @@ override fun onCreate() {
 
 Use `SharedPreferences` in your project with only one line:
 ```kotlin
-val intPreference: Int by Preference("IntPreference", -1)
+val intPreference: Int by Preference(-1, "IntPreference")
 ```
 it creates a `SharedPreferences` property with `IntPreference` name and `-1` as its default value.
 
