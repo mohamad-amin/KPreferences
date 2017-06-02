@@ -77,7 +77,7 @@ var toolbarTitle: Int by ObservablePreference(
 but you need to destroy the `destroyable callback` in your `onDestroy` to **avoid possible memory leaks**. The `CompositeDestroyer` is a helper class to destroy all callbacks at once:
 ```kotlin
 override fun onDestroy() {
-cence    super.onDestroy()
+    super.onDestroy()
     destroyers.invoke()
 }
 ```
